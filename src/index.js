@@ -1,4 +1,5 @@
-import './style.css'
+import './style.css';
+
 const itemsContainer = document.querySelector('.items-contain');
 
 const itemsArr = [{
