@@ -1,4 +1,4 @@
-const taskCompleted = (e, itemsArr) => {
+export const taskCompleted = (e, itemsArr) => {
   const completed = e.target;
 
   if (completed.checked) {
@@ -23,3 +23,5 @@ const taskCompleted = (e, itemsArr) => {
     }
   }
 };
+
+export default 'taskCompleted';
