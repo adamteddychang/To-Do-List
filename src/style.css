@@ -76,6 +76,11 @@ input:focus-visible {
   background-color: #ededed;
 }
 
+.completed {
+  text-decoration: line-through;
+  color: #ededed;
+}
+
 .complete-btn {
   border: none;
   font-size: 20px;
