@@ -1,4 +1,5 @@
 import { taskCompleted } from './script.js';
+import{addnewobj, removeAll, removeTasks, editContent}from './addremove.js'
 import './style.css';
 
 const inputF = document.querySelector('#input');
@@ -86,3 +87,13 @@ const load = () => {
 };
 
 load();
+
+reset.addEventListener('click', removeAll);
+completeBtn.addEventListener('click', removeTasks);
+inputF.addEventListener('keydown', (e) => {
+  if (e.code === 'Enter') {
+    addnewobj(inputF.value);
+    inputF.value = '';
+    window.location.reload();
+  }
+});

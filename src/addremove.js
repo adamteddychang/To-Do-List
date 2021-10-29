@@ -9,13 +9,7 @@ export const addnewobj = (content) => {
   localStorage.setItem('todolist', JSON.stringify(itemsArr));
 };
 
-inputF.addEventListener('keydown', (e) => {
-  if (e.code === 'Enter') {
-    addnewobj(inputF.value);
-    inputF.value = '';
-    window.location.reload();
-  }
-});
+
 
 export const removeAll = () => {
   itemsArr = [];
@@ -23,7 +17,7 @@ export const removeAll = () => {
   window.location.reload();
 };
 
-reset.addEventListener('click', removeAll);
+
 
 export const removeTasks = () => {
   const incompArr = itemsArr.filter((todoItem) => todoItem.complete === false);
@@ -42,7 +36,7 @@ export const removeTasks = () => {
   }
 };
 
-completeBtn.addEventListener('click', removeTasks);
+
 
 export const editContent = (e, content, itemsArr) => {
   const edit = e.target;
