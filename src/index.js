@@ -1,6 +1,6 @@
-import { taskCompleted } from './script.js';
-import{addnewobj, removeAll, removeTasks, editContent}from './addremove.js'
 import './style.css';
+import { taskCompleted } from './script.js';
+import { addnewobj, removeTasks, editContent } from './addremove.js';
 
 const inputF = document.querySelector('#input');
 const itemsContainer = document.querySelector('.items-contain');
@@ -85,14 +85,20 @@ const load = () => {
     }
   };
 };
+const removeAll = () => {
+  itemsArr = [];
+  localStorage.setItem('todolist', JSON.stringify(itemsArr));
+  window.location.reload();
+};
+reset.addEventListener('click', removeAll);
 
 load();
 
-reset.addEventListener('click', removeAll);
 completeBtn.addEventListener('click', removeTasks);
+
 inputF.addEventListener('keydown', (e) => {
   if (e.code === 'Enter') {
-    addnewobj(inputF.value);
+    addnewobj(inputF.value, itemsArr);
     inputF.value = '';
     window.location.reload();
   }

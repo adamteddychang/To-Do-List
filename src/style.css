@@ -30,6 +30,13 @@
   font-size: 32px;
 }
 
+.content {
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  font-size: 32px;
+}
+
 .rotate {
   transform: rotate(90deg);
   margin-right: 3rem;
@@ -54,6 +61,15 @@ input:focus-visible {
   padding-left: 1rem;
   font-size: 30px;
   border-bottom: 1px solid #ededed;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.trash {
+  margin-right: 1rem;
 }
 
 .dots {
