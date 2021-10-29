@@ -1,8 +1,9 @@
 export const taskCompleted = (e, itemsArr) => {
   const completed = e.target;
-
+  itemsArr = [...JSON.parse(localStorage.getItem('todolist'))];
   if (completed.checked) {
     completed.parentElement.classList.add('completed');
+
     for (let i = 0; i < itemsArr.length; i += 1) {
       const parent = completed.parentElement.id;
       const itemIndex = itemsArr[i].index;

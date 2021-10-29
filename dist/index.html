@@ -5,9 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>To Do List</title>  
+  <title>To Do List</title>
+  <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/4fa8c393d0.js" crossorigin="anonymous"></script>
-<script defer src="index.bundle.js"></script></head>
+<script defer src="bundle.js"></script></head>
 
 <body>
   <header id="header">
@@ -17,17 +18,17 @@
   <section id="main">
     <div class="title">
       <h2>Today's to do</h2>
-      <i class="fas fa-sync"></i>
+      <i class="fas fa-sync" id="reset"></i>
     </div>
     <div class="input-contain">
-      <input type="text" placeholder="Add to your list...">
+      <input type="text" placeholder="Add to your list..." id="input" value="">
       <i class="fas fa-level-down-alt rotate"></i>
     </div>
     <ul class="items-contain">
 
     </ul>
     <div class="complete">
-      <button class="complete-btn" type="button">Clear All Completed</button>
+      <button class="complete-btn" type="button" id="comp-btn">Clear All Completed</button>
     </div>
 
 
@@ -36,8 +37,7 @@
 
 
 
-
-  <script src="index.js"></script>
+  
 </body>
 
 </html>
