@@ -17,7 +17,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://adamteddychang.github.io/To-Do-List/)
+[Live Demo Link](https://adamteddychang.github.io/To-Do-List/dist/)
 
 
 ## Getting Started
