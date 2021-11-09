@@ -5,6 +5,7 @@
 > In this project, I will create a to do list application with javascript and webpack.
 
 
+![Screenshot](https://user-images.githubusercontent.com/63560332/140954144-009b355c-5a97-49f3-966b-aa169a5c5de6.png)
 
 
 
